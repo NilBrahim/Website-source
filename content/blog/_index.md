@@ -1,0 +1,5 @@
++++
+date = '2025-10-11T15:17:23+03:30'
+draft = false
+title = 'Blog'
++++

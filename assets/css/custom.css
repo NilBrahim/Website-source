@@ -1,0 +1,51 @@
+/* Style the site name link in the navbar */
+.logo {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: 0.3px;
+  color: var(--text-color, #222);
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+/* Slight grow and color change on hover */
+.logo:hover {
+  color: var(--primary-color, #4b7bae);
+  transform: scale(1.03);
+}
+
+/* Optional: adjust spacing between logo and menu */
+.navbar .logo {
+  margin-right: 1rem;
+}
+
+/* ----- Lighten existing blue tones for links and hover states ----- */
+
+/* Default link color */
+a {
+  color: #6ba9e0; /* lighter blue */
+}
+
+/* Hover and active (clicked) link color */
+a:hover,
+a:focus {
+  color: #86baf0; /* slightly brighter */
+}
+
+/* Visited links */
+a:visited {
+  color: #5d93cc; /* gentle tone for visited links */
+}
+
+/* For dark mode */
+html.dark a {
+  color: #9ac8ff; /* soft light-blue that stands out on dark backgrounds */
+}
+
+html.dark a:hover,
+html.dark a:focus {
+  color: #b3d6ff;
+}
+
+
