@@ -8,16 +8,18 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-- name: Checkout source
-  uses: actions/checkout@v4
-  with:
-    submodules: true
-    fetch-depth: 0
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: 'latest'
           extended: true
 
       - name: Build site
@@ -30,4 +32,4 @@ jobs:
           external_repository: NilBrahim/NilBrahim.github.io
           publish_dir: ./public
           publish_branch: main
-          cname: ""
+          cname: ''
