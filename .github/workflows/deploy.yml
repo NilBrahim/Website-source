@@ -3,7 +3,7 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - main  # or your default branch name
+      - main
 
 jobs:
   deploy:
@@ -32,4 +32,3 @@ jobs:
           external_repository: NilBrahim/NilBrahim.github.io
           publish_dir: ./public
           publish_branch: main
-          cname: ''
