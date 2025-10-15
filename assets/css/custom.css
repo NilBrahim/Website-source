@@ -83,3 +83,17 @@ section, div {
   font-size: 0.8rem !important;
   line-height: 1.2 !important;
 }
+
+
+/* === Override inline style on the site name/logo link === */
+a.logo {
+  font-size: 0.85rem !important;       /* smaller font */
+  font-weight: 500 !important;         /* lighter weight */
+  letter-spacing: 0.1px !important;
+  transform: scale(0.95) !important;   /* slightly smaller overall */
+}
+
+a.logo:hover {
+  color: var(--primary-color, #4b7bae) !important;
+  transform: scale(0.98) !important;
+}
