@@ -85,3 +85,16 @@ div.page-content,
   margin-top: 0.3em !important;
   margin-bottom: 0.3em !important;
 }
+/* === Override logo text style === */
+.logo {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.15px !important;
+  margin-right: 0.5rem !important;
+  transform: none !important;
+}
+
+.logo:hover {
+  color: var(--primary-color, #4b7bae) !important;
+  transform: scale(1.02) !important;
+}
