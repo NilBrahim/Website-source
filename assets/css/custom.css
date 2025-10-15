@@ -47,43 +47,39 @@ html.dark a:hover,
 html.dark a:focus {
   color: #b3d6ff;
 }
-/* === Stronger font and spacing reduction for Niloufar's site === */
 
-/* Global text size and line spacing */
+/* === Strong global overrides for Niloufar's site === */
+
+/* Overall font and line spacing */
 body {
-  font-size: 0.8rem;       /* noticeably smaller text */
-  line-height: 1.3;        /* tighter line spacing */
-  letter-spacing: 0.1px;   /* keeps it readable even smaller */
+  font-size: 0.7rem !important;       /* noticeably smaller text */
+  line-height: 1.2 !important;        /* tighter spacing between lines */
+  letter-spacing: 0.1px !important;
 }
 
-/* Headings — smaller and tighter gaps */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-size: 90%;          /* slightly smaller headings */
-  margin-top: 0.7em;       /* less space above title */
-  margin-bottom: 0.3em;    /* less space below title */
-  line-height: 1.2;
+  font-size: 85% !important;          /* smaller headings */
+  margin-top: 0.4em !important;       /* smaller gap above title */
+  margin-bottom: 0.2em !important;    /* smaller gap below title */
+  line-height: 1.1 !important;
 }
 
-/* Paragraphs — tighter vertical rhythm */
-p {
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+/* Paragraphs and lists */
+p, ul, ol, li {
+  margin-top: 0.2em !important;
+  margin-bottom: 0.2em !important;
+  font-size: 0.8rem !important;
 }
 
-/* Lists — more compact */
-ul, ol {
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-  padding-left: 1.2em;
-}
-
-/* Reduce spacing in sections and divs */
+/* Reduce vertical gaps in general containers */
 section, div {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.3em !important;
+  margin-bottom: 0.3em !important;
 }
 
-/* Optional: slightly smaller navigation font */
-.navbar, nav, a, .menu, .logo {
-  font-size: 0.8rem;
+/* Navigation and footer */
+.navbar, nav, a, .menu, .logo, footer {
+  font-size: 0.8rem !important;
+  line-height: 1.2 !important;
 }
