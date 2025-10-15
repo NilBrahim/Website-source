@@ -48,52 +48,40 @@ html.dark a:focus {
   color: #b3d6ff;
 }
 
-/* === Strong global overrides for Niloufar's site === */
-
-/* Overall font and line spacing */
+/* --- visible global overrides --- */
 body {
-  font-size: 0.7rem !important;       /* noticeably smaller text */
-  line-height: 1.2 !important;        /* tighter spacing between lines */
-  letter-spacing: 0.1px !important;
+  font-size: 0.7rem !important;
+  line-height: 1.2 !important;
 }
 
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-size: 85% !important;          /* smaller headings */
-  margin-top: 0.4em !important;       /* smaller gap above title */
-  margin-bottom: 0.2em !important;    /* smaller gap below title */
+  font-size: 85% !important;
+  margin-top: 0.4em !important;
+  margin-bottom: 0.2em !important;
   line-height: 1.1 !important;
 }
 
-/* Paragraphs and lists */
 p, ul, ol, li {
   margin-top: 0.2em !important;
   margin-bottom: 0.2em !important;
   font-size: 0.8rem !important;
 }
 
-/* Reduce vertical gaps in general containers */
-section, div {
-  margin-top: 0.3em !important;
-  margin-bottom: 0.3em !important;
-}
-
-/* Navigation and footer */
-.navbar, nav, a, .menu, .logo, footer {
+/* --- FORCE smaller fonts and tighter spacing inside main content --- */
+.main.page-content,
+div.page-content,
+.page-content p,
+.page-content li,
+.page-content ol,
+.page-content ul,
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
   font-size: 0.8rem !important;
   line-height: 1.2 !important;
-}
-
-
-/* === Override inline style on the site name/logo link === */
-a.logo {
-  font-size: 0.85rem !important;       /* smaller font */
-  font-weight: 500 !important;         /* lighter weight */
-  letter-spacing: 0.1px !important;
-  transform: scale(0.95) !important;   /* slightly smaller overall */
-}
-
-a.logo:hover {
-  color: var(--primary-color, #4b7bae) !important;
-  transform: scale(0.98) !important;
+  margin-top: 0.3em !important;
+  margin-bottom: 0.3em !important;
 }
