@@ -47,5 +47,23 @@ html.dark a:hover,
 html.dark a:focus {
   color: #b3d6ff;
 }
+/* === Site-wide font and spacing adjustments === */
 
+/* Make the overall text slightly smaller */
+body {
+  font-size: 0.9rem;      /* default is ~1rem */
+  line-height: 1.5;       /* tighter but readable line spacing */
+}
+
+/* Reduce space below headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.4em;   /* less gap below titles */
+  margin-top: 1em;        /* slightly smaller gap above titles */
+}
+
+/* Optional: tighten paragraph spacing a bit */
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
 
