@@ -47,4 +47,6 @@ url = "mailto:s.niloufar.ebrahimi@gmail.com"
   url = "/blog/"
   weight = 3
 
-
+[author]
+name = "Niloofar Ebrahimi"
+email = "s.niloufar.ebrahimi@gmail.com"
