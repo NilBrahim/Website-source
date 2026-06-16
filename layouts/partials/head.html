@@ -51,5 +51,7 @@
     {{ if templates.Exists "partials/custom-head.html" }}
       {{ partial "custom-head.html" . }}
     {{ end }}
-<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+
+<link rel="stylesheet" href="/css/custom.css">
+
 </head>
