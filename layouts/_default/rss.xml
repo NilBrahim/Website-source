@@ -1,0 +1,15 @@
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+
+{{- $pages := where $pctx.RegularPages "Type" "in" .Site.Params.mainSections -}}
+
+{{- $rss := newRSS .Site }}
+{{- $rss.Title = .Site.Title }}
+{{- $rss.Link = .Permalink }}
+
+{{- range $pages }}
+  {{- $item := newRSSItem . }}
+  {{- $rss.Items = $rss.Items | append $item }}
+{{- end }}
+
+{{- $rss | render "rss.xml" }}
